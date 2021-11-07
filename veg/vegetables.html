@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+    <style>
+		 *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(110, 201, 98);
+            font-family: "Roboto", sans-serif;
+            display:block;
+            justify-content:flex-start;
+            align-items:flex-start;
+            min-height: 100vh;
+            
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .tab {
+            max-width: 800%;
+            padding: 0 2em;
+            border-radius: 0.5rem;
+            background-color: #333;
+            line-height: 4em;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: auto;
+            transition: all 0.5s linear;
+            box-shadow: 5px 5px 20px #000;
+        }
+
+        .tab-items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-grid;
+            grid-gap: 1em;
+            transition: color 5s ease-in;
+        }
+
+        .tab-items> :nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        .tab-items> :nth-child(2) {
+            grid-column: 2/3;
+        }
+
+        .tab-items> :nth-child(3) {
+            grid-column: 3/4;
+        }
+
+        .tab-items> :nth-child(4) {
+            grid-column: 4/5;
+        }
+
+        .tab-items> :nth-child(5) {
+            grid-column: 5/6;
+        }
+
+        .tab-item {
+            display: inline-grid;
+            grid-row: 1/2;
+        }
+
+        .tab-item.active .item-link {
+            color: rgb(74, 167, 167);
+        }
+
+        .item-link {
+            padding: 0 0.75em;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: color 2ms;
+        }
+
+        .item-link:hover {
+            color: rgb(146, 78, 235);
+            text-decoration: underline;
+        }
+
+        .tab-indicator {
+            height: 3px;
+            background-color: yellow;
+            border-radius: 3px 3px 0 0;
+            grid-column: var(--index)/span 1 !important;
+            grid-row: 1/2;
+            align-self: end;
+        }
+        .tab-item1{
+            position: absolute;
+            right: 5px;
+            
+        }
+
+        /*body*/
+        body{
+            background: rgb(110, 201, 98);
+        }
+        h {
+            font-size: 36px;
+            
+        }
+
+        p{
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+        h,img{
+            display: block;
+            padding: 15px;
+            
+        }
+        .wrap{
+            font-size: 20px;
+            
+        }
+        .head{
+            font-weight: bold;
+        }
+
+		
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="tab">
+        <ul class="tab-items">
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href=".../Index Page/index.html">
+                Home</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="#"> About</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="#">Community</a>
+            </li>
+            <li class="tab-item">
+                <a class="item-link" onclick="select(this)" href="services.php">Services</a>
+            </li>
+            <li class="tab-item1">
+                <a class="item-link" onclick="select(this)" href="#">
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div></a>
+            </li>
+            <div class="tab-indicator"></div>
+        </ul>
+    </div>
+    <div class="wrap">
+<b> <h>1. Carrots</h> </b>
+<img src="images/carrots.jpg" width="500px" height="300px">
+<p>Carrots are packed with vitamin A, providing 428% of the daily recommended value in just one cup (128 grams).</p>
+
+<p>They contain beta-carotene, an antioxidant that gives carrots their vibrant orange color and could help in cancer prevention .</p>
+
+<p>In fact, one study revealed that for each serving of carrots per week, participants’ risk of prostate cancer decreased by 5% .</p>
+
+<p>Another study showed that eating carrots may reduce the risk of lung cancer in smokers as well. Compared to those who ate carrots at least once a week, smokers who did not eat carrots had a three times greater risk of developing lung cancer.</p>
+
+<p>Carrots are also high in vitamin C, vitamin K and potassium.</p>
+
+<!--carrot-->
+<b>  <h>2. Garlic</h> </b>
+<img src="images/garlic.jpg" width="500px" height="300px">
+<p>Garlic has a long history of use as a medicinal plant, with roots tracing all the way back to ancient China and Egypt.</p>
+
+<p>The main active compound in garlic is allicin, a plant compound that is largely responsible for garlic’s variety of health benefits.</p>
+
+<p>Several studies have shown that garlic can regulate blood sugar as well as promote heart health.</p>
+
+<p>In one animal study, diabetic rats were given either garlic oil or diallyl trisulfide, a component of garlic. Both garlic compounds caused a decrease in blood sugar and improved insulin sensitivity .</p>
+
+<p>Another study fed garlic to participants both with and without heart disease. Results showed that garlic was able to decrease total blood cholesterol, triglycerides and LDL cholesterol while increasing HDL cholesterol in both groups .</p>
+
+<p>Garlic may be useful in the prevention of cancer as well. One test-tube study demonstrated that allicin induced cell death in human liver cancer cells .</p>
+
+<p>However, further research is needed to better understand the potential anti-cancer effects of garlic.</p>
+
+<b><h>3. Ginger</h></b>
+<img src="images/ginger.jpg" width="500px" height="300px">
+
+<p>Ginger root is used as a spice in everything from vegetable dishes to desserts.</p>
+
+<p>Historically, ginger has also been used as a natural remedy for motion sickness.</p>
+
+<p>Several studies have confirmed the beneficial effects of ginger on nausea. In a review comprised of 12 studies and nearly 1,300 pregnant women, ginger significantly reduced nausea compared to a placebo.</p>
+
+<p>Ginger also contains potent anti-inflammatory properties, which can be helpful in treating inflammation-related disorders like arthritis, lupus or gout.</p>
+
+<p>In one study, participants with osteoarthritis who were treated with a concentrated ginger extract experienced reduced knee pain and relief from other symptoms .</p>
+
+<p>Further research suggests that ginger could aid in the treatment of diabetes as well.</p>
+
+<p>A 2015 study looked at the effects of ginger supplements on diabetes. After 12 weeks, ginger was found to be effective in decreasing blood sugar levels .</p>
+
+<p>Studies show that ginger could reduce nausea and alleviate inflammation. Ginger supplements may also help decrease blood sugar.</p>
+
+<!--Sweet Potatoes-->
+
+<b><h>4. Sweet Potatoes</h></b>
+<img src="images/sweetPotato.jpg" width="500px" height="300px">
+
+<p>Classified as a root vegetable, sweet potatoes stand out for their vibrant orange color, sweet taste and impressive health benefits.</p>
+
+<p>One medium sweet potato contains 4 grams of fiber, 2 grams of protein and a good amount of vitamin C, vitamin B6, potassium and manganese .</p>
+
+<p>It’s also high in a form of vitamin A called beta-carotene. In fact, one sweet potato fulfills 438% of your daily vitamin A needs .</p>
+
+<p>Beta-carotene consumption has been linked to a significant decrease in the risk of certain types of cancer, including lung and breast cancer .</p>
+
+<p>Specific types of sweet potatoes may also contain additional benefits. For example, Caiapo is a type of white sweet potato that may have an anti-diabetic effect.</p>
+
+<p>In one study, people with diabetes were given 4 grams of Caiapo daily over 12 weeks, leading to a reduction in both blood sugar and blood cholesterol levels .</p>
+
+<p>Sweet potatoes are high in beta-carotene, which may decrease the risk of some types of cancer. White sweet potatoes could also help reduce blood cholesterol and blood sugar levels.</p>
+
+
+<!--spinach-->
+<b><h>5. Spinach</h></b>
+<img src="images/spinach.jpg" width="500px" height="300px">
+<p>This leafy green tops the chart as one of the healthiest vegetables, thanks to its impressive nutrient profile.</p>
+
+<p>One cup (30 grams) of raw spinach provides 56% of your daily vitamin A needs plus your entire daily vitamin K requirement-all for just 7 calories.</p>
+
+<p>Spinach also boasts a great deal of antioxidants, which can help reduce the risk of chronic disease.</p>
+
+<p>One study found that dark green leafy vegetables like spinach are high in beta-carotene and lutein, two types of antioxidants that have been associated with a decreased risk of cancer .</p>
+
+<p>In addition, a 2015 study found that spinach consumption may be beneficial for heart health, as it may lower blood pressure .</p>
+
+<p>Spinach is rich in antioxidants that may reduce the risk of chronic disease, as it may reduce risk factors such as high blood pressure.</p>
+    
+</div>
+<body>

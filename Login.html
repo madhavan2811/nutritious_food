@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="validation.js"></script>
+<link rel="stylesheet" href="styles.css">
+<style>
+	a{
+		text-decoration: none;
+		color : "aqua";
+	}
+</style>
+
+<title>Login</title>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Welcome</h1>
+		
+		<form name="login" action="index.html" onsubmit="return validate()" method="post" >
+<p>Username :			<input type="text" placeholder="Username" name='username' size="30"></p>
+<p>Password :			<input type="password" placeholder="Password" name='password' size="30"></p>
+			<input type="submit" value="Login">
+			
+		</form>	
+		
+		<p> Forgot Username/Password ?</p>
+		<a href="Registration page/register.html">	<p id="reg"> New Registration</a></p>
+
+		
+	</div>	
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="valid.js"></script>
+
+    
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    </head>
+
+<body>
+
+<div class= "page">
+<h class="title">Registration</h>
+<br>
+<br>
+   <form name="RegForm" action="welcome.php" onsubmit="return validate()" method="post">
+<p>First Name: <input type="text"
+                size="65" name="FName" /></p>
+<br />
+<p>Last Name: <input type="text"
+                size="65" name="LName" /></p>
+<br />
+<p>Date Of Birth: <input type="text"
+                    size="65" name="DOB" /></p>
+
+<br><p> Gender: </p>  
+<input type="radio" name="gender" value="Male">Male<br>   
+<input type="radio" name="gender" value="Female">Female<br>   
+<input type="radio" name="gender" value="Transgender">Transgender<br>
+<br>
+<p>E-mail ID: <input type="text"
+                    size="65" name="EMail" /></p>
+<br />
+<p>Phone number: <input type="text"
+                    size="65" name="phone" /></p>
+<br />
+
+  <p>  Account type : </p> 
+    <input type="checkbox" name="account" value="People's Account">  People's Account
+
+    <br><input type="checkbox" name="account" value="Farmer's Account">  Farmer's Account
+<br>
+
+
+<p>
+    <input type="submit"
+        value="Submit" name="Submit" />
+    <input type="reset"
+        value="Reset" name="Reset" />
+</p>
+</form>
+    </div>  
+
+
+<div class="circle" >
+<p>Grow Healthy <br>Eat Healthy</p>
+</div>  
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nutritious food</title>  
+  <link rel="stylesheet" href="sheet.css">
+  
+</head>
+<script>
+  function validate() {
+var name = document.forms["RegForm"]["Name"];
+var email = document.forms["RegForm"]["EMail"];
+var phone = document.forms["RegForm"]["phone"];
+var com = document.forms["RegForm"]["Com"];
+var address = document.forms["RegForm"]["Address"];
+
+
+if (name.value == "") {
+  window.alert("Please enter your name.");
+  name.focus();
+  return false;
+}
+
+
+if (address.value == "") {
+  window.alert("Please enter your address.");
+  address.focus();
+  return false;
+}
+
+if (email.value == "") {
+  window.alert(
+    "Please enter a valid e-mail address.");
+  email.focus();
+  return false;
+}
+
+if (phone.value == "") {
+  window.alert(
+    "Please enter your phone number.");
+  phone.focus();
+  return false;
+}
+if (com.value == "") {
+            window.alert("Please enter your comment");
+            com.focus();
+            return false;
+}
+if(true){
+  alert("You have Succefully Submitted");
+}
+}
+
+
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+function myFunction1(x) {
+  x.style.background = "red";
+}
+function comp() {
+  alert("Webpage is Succefully loaded");
+  
+}
+function myFunction2(x) {
+  x.style.background = "aqua";
+}
+
+
+
+
+</script>
+<body>
+<!--header-->
+<div id="index">
+<div class="tab">
+  <ul class="tab-items">
+      <li class="tab-item">
+          <a class="item-link" onclick="select(this)" href="#">
+            Home</a>
+      </li>
+      <li class="tab-item">
+          <a class="item-link" onclick="select(this)" href="#about"> About</a>
+      </li>
+      <li class="tab-item">
+          <a class="item-link" onclick="select(this)" href="#contact"> Contact</a>
+      </li>
+      <li class="tab-item">
+          <a class="item-link" onclick="select(this)" href="#">Community</a>
+      </li>
+      <li class="tab-item">
+        <a class="item-link" onclick="select(this)" href="#">Profile</a>
+    </li>
+      <li class="tab-item">
+          <a class="item-link" onclick="select(this)" href="index.php">
+               Login</a>
+      </li>
+      <li class="tab-item">
+        <a class="item-link" onclick="select(this)" href="services.php">Services</a>
+    </li>
+      
+      <div class="tab-indicator"></div>
+  </ul>
+</div>
+
+<h1>Nutritious Foods</h1>
+<p></p>
+
+<img src="images/vegetables.jpg" width="100%" height="100%">
+<div class="content" id="about">
+<h2 >About</h2>
+<h2>In this page, These are vegetables, Fruits, Nuts, Seeds, Herbs, Non Veg Foods, Immunity Boosting Foods, Tips for Healthy Life, BMI Calculators and Exercise. </h2>
+</div>
+
+<!--healthy foods-->
+
+<div class="row">
+  <div class="column">
+ <a href="veg/vegetables.html"> <img src="images/vegetables.jpg" alt="Snow" style="width:100%", height="100%"></a>
+	<p>Vegetables</p>
+  </div>
+  <div class="column">
+<a href="fruits/fruits.html">   <img src="images/fruits1.jpg" alt="Forest" style="width:100%", height="100%"></a>
+	<p>Fruits</p>
+  </div>
+  <div class="column">
+  <img src="images/nuts.jpg" alt="Mountains" style="width:100%", height="100%">
+	<p>Nuts and Seeds</p>
+  </div>
+</div>
+<div class="row">
+	<div class="column">
+	  <img src="images/herbs.jpg" alt="Snow" style="width:100%", height="100%">
+	  <p>Herbs</p>
+	</div>
+	<div class="column">
+	  <img src="images/nonveg1.jpg" alt="Forest" style="width:100%", height="100%">
+	  <p>Non Veg Foods</p>
+	</div>
+	<div class="column">
+	  <img src="images/healthy.png" alt="Mountains" style="width:100%", height="100%">
+	  <p>Tips For Healthy Life</p>
+	</div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <a href="BMI/BMI.html"> <img src="images/BMI1.jpg" alt="Snow" style="width:100%", height="100%"></a>
+      <p>BMI Calculators</p>
+    </div>
+    <div class="column">
+      <img src="images/immunityBoosting.jpg" alt="Forest" style="width:100%", height="100%" >
+      <p>Immunity Boosting Foods</p>
+    </div>
+    <div class="column">
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/AzV3EA-1-yM" onload="comp()">
+      </iframe>
+      
+      <p>Exercise</p>
+    </div>
+    
+    </div>
+
+
+  <!-- Contact Section -->
+  <div class="content" id="contact">
+    <h3 class="head">Contact:</h3> <br>
+    <h4>Lets get in touch and talk about your health.</h4>
+    <br>
+
+      <div class="sec" >
+        <form name="RegForm" action=""
+        onsubmit="return validate()" method="post">
+        <p1>Name: <input type="text" onfocus="myFunction(this)"
+                size="65" name="Name" /></p1>
+            <br><br>
+
+        
+        <p1>Address: <input type="text" onfocus="myFunction(this)"
+                  size="65" name="Address" /></p1>
+        <br><br>
+        <p1>E-mail ID: <input type="text" onfocus="myFunction(this)"
+                  size="65" name="EMail" /></p1>
+        <br><br>
+        <p1>Phone number: <input type="text" onfocus="myFunction(this)"
+                  size="65" name="phone" /></p1>
+        <br><br>
+        <p1>Comment: <input type="text" onfocus="myFunction(this)"
+          size="65" name="Com" /></p1>
+          <br>
+        <p1><input type="submit"
+				value="Submit" name="Submit" />
+			<input type="reset"
+				value="Reset" name="Reset" /> </p1>
+        <br> 
+
+    </form>
+  </div>
+  </div>
+
+    
+
+<!-- Footer -->
+<footer class="foot">
+  <p id="foo">Stay Happy, Stay Healthy</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<style>
+	h{
+	font-size:30px;
+	font-weight:bold;
+}
+    body{
+        background-color: rgb(110, 201, 98);;
+    }
+.wrap{
+    font-size: 25px;
+    position: relative;
+    top:20px;
+    left: 20px;
+    color: rgb(54, 12, 207);
+    
+}
+</style>
+<script>
+    alert("Please Enter Your Weight in Kg\nPlease Enter Your Height in meters");
+    var w,h,res;
+    function bmi(){
+        
+    
+        w = document.getElementById("wei").value;
+        h = document.getElementById("hei").value;
+        document.getElementById("res").innerHTML = w/(h*h); 
+        
+    }
+</script>
+ <body>
+	<h>BMI Calculator<h>
+     <div class="wrap">
+     <label>Enter Your Weight :</label>
+     <input type="text" id="wei">   <br><br>
+     <label>Enter Your Height :</label>
+     <input type="text" id="hei">    <br>
+     <button onclick="bmi()" value="bmi">Calculate</button>
+     <p>Your BMI is</p>
+     <p id="res"> </p>
+     <img src="BMI-values.jpg">
+    </div>
+ </body>

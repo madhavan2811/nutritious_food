@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+    <title>Nutritious Food</title> 
+    <style>
+         *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(110, 201, 98);
+            font-family: "Roboto", sans-serif;
+            display:block;
+            justify-content:flex-start;
+            align-items:flex-start;
+            min-height: 100vh;
+            
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .tab {
+            max-width: 800%;
+            padding: 0 2em;
+            border-radius: 0.5rem;
+            background-color: #333;
+            line-height: 4em;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: auto;
+            transition: all 0.5s linear;
+            box-shadow: 5px 5px 20px #000;
+        }
+
+        .tab-items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-grid;
+            grid-gap: 1em;
+            transition: color 5s ease-in;
+        }
+
+        .tab-items> :nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        .tab-items> :nth-child(2) {
+            grid-column: 2/3;
+        }
+
+        .tab-items> :nth-child(3) {
+            grid-column: 3/4;
+        }
+
+        .tab-items> :nth-child(4) {
+            grid-column: 4/5;
+        }
+
+        .tab-items> :nth-child(5) {
+            grid-column: 5/6;
+        }
+
+        .tab-item {
+            display: inline-grid;
+            grid-row: 1/2;
+        }
+
+        .tab-item.active .item-link {
+            color: rgb(74, 167, 167);
+        }
+
+        .item-link {
+            padding: 0 0.75em;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: color 2ms;
+        }
+
+        .item-link:hover {
+            color: rgb(146, 78, 235);
+            text-decoration: underline;
+        }
+
+        .tab-indicator {
+            height: 3px;
+            background-color: yellow;
+            border-radius: 3px 3px 0 0;
+            grid-column: var(--index)/span 1 !important;
+            grid-row: 1/2;
+            align-self: end;
+        }
+        .tab-item1{
+            position: absolute;
+            right: 5px;
+            
+        }
+        /*body*/
+        body{
+            background: rgb(110, 201, 98);
+        }
+        h {
+            font-size: 36px;
+            
+        }
+
+        p{
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+        h,img{
+            display: block;
+            padding: 15px;
+            
+        }
+        .wrap{
+            font-size: 20px;
+        }
+        h{
+            font-weight: bold;
+        
+            
+        }
+        .head{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <!--header-->
+<div class="tab">
+    <ul class="tab-items">
+        <li class="tab-item">
+            <a class="item-link" onclick="select(this)" href="#index">
+        Home</a>
+        </li>
+        <li class="tab-item">
+            <a class="item-link" onclick="select(this)" href="#"> About</a>
+        </li>
+        <li class="tab-item">
+            <a class="item-link" onclick="select(this)" href="#">Community</a>
+        </li>
+        <li class="tab-item">
+            <a class="item-link" onclick="select(this)" href="#"></a>
+        </li>
+        <li class="tab-item1">
+            <a class="item-link" onclick="select(this)" href="#">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div></a>
+        </li>
+        <div class="tab-indicator"></div>
+    </ul>
+</div>
+    <h>1. Apples</h>
+    <img src="images/apple.jpg" width="500px" height="300px">
+    <p>One of the most popular fruits, apples are chock-full of nutrition.<br><br>
+    
+    They’re rich in both soluble and insoluble fiber, such as pectin, hemicellulose, and cellulose. These help you manage your blood sugar levels, promote good digestion, and support gut and heart health .<br><br>
+    
+    In addition, they’re a good source of vitamin C and plant polyphenols, which are disease-fighting compounds found in plants. In fact, consuming apples regularly may lower your risk of heart disease, stroke, cancer, overweight, obesity, and neurological disorders.<br><br>
+    
+    Note that most of the polyphenols in apples are located just below the skin, so be sure to eat it to reap the greatest benefits.<p>
+<!--orange-->
+    <h>2. Oranges</h>
+    <img src="images/orange.jpg" width="500px" height="300px">
+<p>Oranges are known for their high vitamin C content, providing 91% of the DV in a single fruit. They’re also high in potassium, folate, thiamine (vitamin B1), fiber, and plant polyphenols.<br><br>
+
+Studies have found that consuming whole oranges may lower levels of inflammation, blood pressure, cholesterol, and post-meal blood sugar .<br><br>
+
+Though 100% orange juice provides a high volume of nutrients and antioxidants, it usually lacks dietary fiber. Varieties that include the pulp do include some fiber, so opt for these over juices without pulp.<br><br>
+
+That said, try to eat whole oranges more often, and keep juice portions to 1 cup (235 mL) or less per serving.</p>
+
+<!--pomegranete-->
+
+<h>3. Pomegranates</h>
+<img src="images/pomegranate..jpg" width="500px" height="300px">
+<p>Pomegranates are known for their high antioxidant content.<br><br>
+
+They contain a lengthy list of beneficial plant compounds, such as flavonoids, tannins, and lignans. These have strong antioxidant and anti-inflammatory properties that help fight free radicals and reduce your risk of chronic disease.<br><br>
+
+One high quality study found that people experienced significantly lower levels of inflammation after drinking 8.5 ounces (250 mL) of pomegranate juice per day for 12 weeks, compared with a placebo .</p>
+
+
+<!--Avocado-->
+
+<h>4. Avocado</h>
+<img src="images/avocado.png" width="500px" height="300px">
+<p>Unlike most other fruits, avocados are high in healthy fats and low in natural sugars.<br><br>
+
+They’re mostly made of oleic acid, a monounsaturated fat linked to better heart health. They also contain high amounts of potassium, fiber, vitamin B6, folate, vitamins E and K, and two carotenoids known as lutein and zeaxanthin, which support eye health .<br><br>
+
+In fact, a high quality 2020 study found a significant decrease in cholesterol levels and an increase in blood lutein levels among participants who consumed an avocado per day for 5 weeks .<br><br>
+
+When compared by weight, avocados are higher in calories than most other fruits. However, studies have linked them to better weight management. Researchers have proposed that this is because their high fat and fiber contents promote fullness .</p>
+
+<!--Strawberries-->
+
+<h>5. Strawberries</h>
+<img src="images/strawberry.jpg" width="500px" height="300px">
+<p>Strawberries are a favorite fruit for many. They’re delicious, convenient, and highly nutritious. In particular, strawberries are a good source of vitamin C, folate, and manganese .<br><br>
+
+They’re full of plant polyphenols that act as antioxidants, such as flavonoids, phenolic acids, lignans, and tannins.
+
+In particular, they’re high in anthocyanins, ellagitannins, and proanthocyanidins, which studies have shown reduce the risk of chronic disease .<br><br>
+
+Furthermore, they have a low glycemic index, meaning they won’t significantly affect your blood sugar levels.</p>
+</body>

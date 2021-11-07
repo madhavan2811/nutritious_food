@@ -1,0 +1,54 @@
+h{
+	font-size:30px;
+	display:inline-block;
+	align-content: flex-start;
+}
+p{
+	font-weight: bold;
+}
+
+body{
+	background-color:rgb(110, 201, 98);
+	font-family: 'Source Sans Pro', sans-serif;
+	color: black;
+	font-weight: 500;
+}
+.title{
+	text-align:center;
+	color: black;
+	font-weight:bold;
+	
+}
+.page{
+	position:absolute;
+	top:10px;
+	right:1px;
+}
+.page{
+	font-family:"Gill Sans", sans-serif;
+	background-color:white;
+	padding:10px 20px;
+	margin:10px 30px;
+	position:absolute;
+	top:1px;
+	right:50%;
+	left:20px;
+	bottom:1px;
+		
+}
+.circle{
+	font-size:35px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-weight:bold;
+	border:7px solid green;
+	border-radius:50%;
+	padding:20px;
+	position:absolute;
+	right:250px;
+	
+	top:250px;
+}
+.error{
+	color: red;
+}
